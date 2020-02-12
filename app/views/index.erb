@@ -1,13 +1,8 @@
-<h1>Recipes</h1>
-
-<ul>
-  <% @recipes.each do |r| %>
-  <li>
-    <p><%= r.name %></p>
-    <p><a href="/recipes/<%=recipe.id%>">See Recipe Info</a></p>
-  </li>
+<h1>List of Recipes</h1>
+<ol>
+  <% @recipes.each do |recipe| %>
+    <li><a href="/recipes/<%=recipe.id%>"><%=recipe.name%></a></li>
   <% end %>
-</ul>
+</ol>
 
-<p><a href="/recipes/new">Create a new Recipe</a></p>
-<p><a href="/recipes">Go back to recipe list</a></p>
+<p><a href="/recipes/new">Create a New Recipe</a></p>

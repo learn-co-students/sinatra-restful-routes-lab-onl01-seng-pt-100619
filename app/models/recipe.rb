@@ -1,1 +1,5 @@
-#Placeholder for a model
+#Placeholder for a mocel
+
+class Recipe < ActiveRecord::Base
+
+end
